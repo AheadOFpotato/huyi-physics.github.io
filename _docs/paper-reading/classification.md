@@ -4,24 +4,32 @@ category: Paper Reading
 order: 1
 ---
 
-[toc]
+- [1. INTRODUCTION](#1-introduction)
+- [2. MACHINE LEARNING MODELS](#2-machine-learning-models)
+  - [B. Point Cloud Networks](#b-point-cloud-networks)
+- [3. DATA PREPARATION](#3-data-preparation)
+  - [A. Two particle correlation](#a-two-particle-correlation)
+  - [B. Particle cloud](#b-particle-cloud)
+- [4. RESULTS](#4-results)
+  - [A. Classification via two particle correlation](#a-classification-via-two-particle-correlation)
+  - [B. Event by event classification](#b-event-by-event-classification)
+
 ## 1. INTRODUCTION
+
 ## 2. MACHINE LEARNING MODELS
-### A. Principal Component Analysis
-- more data prefer "machine learning", difficult ro visualize and understand
 
-- PCA: 对数据降维，只保留原始数据中最重要的信息
+> A. Principal Component Analysis
+>>+ more data prefer "machine learning", difficult ro visualize and understand
+>>+ PCA: 对数据降维，只保留原始数据中最重要的信息
   换坐标系来降低principal components之间的耦合
-
-- 给dataset：$X_{n\times m}=[x_1,…,x_m]$
+>>+ 给dataset：$X_{n\times m}=[x_1,…,x_m]$
   n个sample，每个sample是m维向量(有m个feature)
-
-  1. centralize:
+>>1. centralize:
     $z_i=x_i-\mu_i$
     其中$\mu=\frac{1}{n}\sum\limits_{i=1}^{n}x_i$,是n个sample element-wise的平均值
-  2. covariance matrix 协方差矩阵
+>>2. covariance matrix 协方差矩阵
    $\Sigma=\frac{1}{n}\sum\limits_{i=1}^{n}z_iz_i^{T}=\frac{1}{n}Z\cdot Z^{T}$
-  3. 计算convariance matrix的本征值
+>>3. 计算convariance matrix的本征值
    <font color=yellow>? 目的是把$\Sigma$对角化，来消除不同坐标之间的耦合</font>
    $\Sigma u=\lambda u$
    可以把对应比较大本征值的向量作为新的基矢量
