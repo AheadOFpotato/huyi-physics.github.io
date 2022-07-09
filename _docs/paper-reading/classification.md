@@ -1,5 +1,5 @@
 ---
-title: classification of flow and nonflow
+title: 22-7-9 classification of flow and nonflow
 category: Paper Reading
 order: 1
 ---
@@ -56,3 +56,4 @@ order: 1
 
 > B. Event by event classification
 ><font color=RoyalBlue>? 这里的input是三维动量</font>
+
