@@ -4,26 +4,26 @@ category: flow nonflow
 order: 1
 ---
 
-Share images with your friends! Send photos and pictures from your computer, phone or camera.
+- [Introduction](#introduction)
+- [数据降维：PCA](#数据降维pca)
+- [点云网络：PCN](#点云网络pcn)
+- [二粒子关联](#二粒子关联)
+- [**结果**](#结果)
 
-> Images are stored until you choose to remove them.
 
-To share an image:
+# Introduction
+- the importance of classifying flow nonflow
+- basic logic of machine
+- dataset
+# 数据降维：PCA
+- neccesity
+- 特征值分解的逻辑
+# 点云网络：PCN
+- 数据特性
+- 网络结构
+# 二粒子关联
+# **结果**
+- 二粒子关联
+- event-by-event classification
+- 现存问题
 
-1. Open a message with someone
-2. Select the **Send Media** button
-3. Pick an image
-
-![](//placehold.it/800x600)
-
-Supported types:
-
-* JPEG
-* PNG
-* BMP
-* GIF
-
-Unsupported types:
-
-* SVG
-* WEBP
