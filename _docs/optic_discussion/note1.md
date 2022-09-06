@@ -1,5 +1,10 @@
-[toc]
+---
+title: class1
+category: optic discussion
+order: 1
+---
 
+[toc]
 
 # 文章目录
 ## 1. Haldane model (2 lessons)
